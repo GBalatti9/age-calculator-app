@@ -1,7 +1,12 @@
 
 
-export const Result = () => {
+export const Result = ({ birthDate }) => {
+    let { year, day, month } = birthDate;
     return (
-        <div>Result</div>
+        <>
+        <h2> { year } years </h2>
+        <h2> { month } month </h2>
+        <h2> { day } day </h2>
+        </>
     )
 }
