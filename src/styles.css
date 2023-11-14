@@ -1,8 +1,70 @@
-.bg-size{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,600;0,800;1,400&family=Poppins:ital,wght@0,400;0,700;0,800;1,800&family=Roboto:wght@300;500;900&display=swap');
+
+.bg-size {
     width: 100vw;
     height: 100vh;
 }
 
-.custom-border-radius{
-    border-radius: 20px 20px 80px 20px;
+.custom-border-radius {
+    border-radius: 20px 20px 150px 20px;
+}
+
+.purple {
+    color: hsl(259, 100%, 65%);
+}
+
+.bg-purple{
+    background-color: hsl(259, 100%, 65%);
+    color: white;
+}
+
+.font{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.input-font{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.input-width{
+    width: 80%;
+}
+
+.size{
+    height: 70vh;
+    width: 50%;
+}
+
+.custom-form {
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.custom-btn{
+    position: absolute;
+    right: 30px;
+    bottom: -35px;
+    opacity: 100%;
+}
+
+.btn:hover{
+    background-color: white;
+    color: hsl(259, 100%, 65%);
+}
+
+.light-grey{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+
+.custom-label{
+    padding-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
