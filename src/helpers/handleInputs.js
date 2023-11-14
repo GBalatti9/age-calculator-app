@@ -88,6 +88,8 @@ export const handleInputs = () => {
         let ageMonth = 0;
         let ageDay = 0;
 
+        // This if handles the case in which the user has already had a birthday in the year. 
+        // If he hasn't then the else is going to take care of it.
         if (( todayMonth > birthmonth ) || ( todayMonth === birthmonth && todayDay >= birthday )) {
             ageYear = todayYear - birthyear;
             ageMonth = todayMonth - birthmonth;
