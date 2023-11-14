@@ -50,6 +50,7 @@
     right: 30px;
     bottom: -35px;
     opacity: 100%;
+    font-size: 20px;
 }
 
 .btn:hover{
@@ -67,4 +68,9 @@
     padding-bottom: 5px;
     font-size: 12px;
     letter-spacing: 2px;
+}
+
+.custom-border{
+    width: 90%;
+    margin: 15px auto;
 }

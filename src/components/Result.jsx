@@ -3,7 +3,7 @@
 export const Result = ({ birthDate }) => {
     let { year, day, month } = birthDate;
     return (
-        <>
+        <div className="p-4">
             <h2 className="font">
                 <span className="purple">{year} </span>
                 years </h2>
@@ -13,6 +13,6 @@ export const Result = ({ birthDate }) => {
             <h2 className="font">
                 <span className="purple">{day} </span>
                 days </h2>
-        </>
+        </div>
     )
 }

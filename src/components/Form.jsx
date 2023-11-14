@@ -30,7 +30,7 @@ export const Form = ({ onFormSubmit }) => {
             </div>
 
             <div className="btn-container">
-            <button className="btn bg-purple custom-btn"> Send </button>
+            <button className="btn bg-purple custom-btn z-1"> Send </button>
             </div>
 
         </form>
