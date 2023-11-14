@@ -8,6 +8,7 @@ export const Result = ({ birthDate }) => {
                 <span className="purple">{year} </span>
                 years </h2>
             <h2 className="font">
+                
                 <span className="purple">{month} </span>
                 months </h2>
             <h2 className="font">
