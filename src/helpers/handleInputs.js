@@ -1,55 +1,5 @@
 import { useState } from "react";
-
-let months = [
-    {
-        name: 'January',
-        days: 31
-    },
-    {
-        name: 'February',
-        days: 28
-    },
-    {
-        name: 'March',
-        days: 31
-    },
-    {
-        name: 'April',
-        days: 30
-    },
-    {
-        name: 'May',
-        days: 31
-    },
-    {
-        name: 'June',
-        days: 30
-    },
-    {
-        name: 'July',
-        days: 31
-    },
-    {
-        name: 'August',
-        days: 31
-    },
-    {
-        name: 'September',
-        days: 30
-    },
-    {
-        name: 'October',
-        days: 31
-    },
-    {
-        name: 'November',
-        days: 30
-    },
-    {
-        name: 'December',
-        days: 31
-    },
-]
+import months from '../database/months.json';
 
 let birthdate = {
     day: "--",
@@ -122,30 +72,3 @@ export const handleInputs = () => {
         birthDate,
     }
 }
-
-// if ((todayMonth > month) || (todayMonth === month && todayDay >= day)) {
-//     ageYear = todayYear - year;
-//     ageMonth = todayMonth - month;
-// } else {
-//     ageYear = todayYear - year - 1;
-//     ageMonth = months.length - (month - todayMonth);
-// }
-
-// if(todayDay < day) {
-//     let partialDay = (day - todayDay);
-//     console.log({partialDay});
-// }
-
-        // if(todayDay < birthday){
-
-        //     let partialDay = todayDay - birthday;
-        //     let findLastCompleteMonth = months[todayMonth - 1];
-
-        //     findLastCompleteMonth.days !== todayDay 
-        //     ? ageDay = findLastCompleteMonth.days + partialDay : '';
-
-        //     console.log(findLastCompleteMonth);
-        //     console.log(todayMonth, todayDay);
-        // } else if (todayDay > birthday){
-            
-        // }
