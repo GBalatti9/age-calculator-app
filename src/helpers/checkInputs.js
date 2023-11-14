@@ -28,11 +28,11 @@ export const checkInputs = () => {
         }
         if (name === 'month') {
             const inputMonth = document.getElementById('month');
-            inputMonth.value > 0 ? errors.month : updateErrors(errors, name, 'Cannot be empty');
+            inputMonth.value > 0 ? updateErrors(errors, name, '') : updateErrors(errors, name, 'Cannot be empty');
         }
         if (name === 'year') {
             const inputYear = document.getElementById('year');
-            inputYear.value > 0 ? errors.year : updateErrors(errors, name, 'Cannot be empty');
+            inputYear.value > 0 ? updateErrors(errors, name, '') : updateErrors(errors, name, 'Cannot be empty');
         }
     }
 

@@ -12,7 +12,6 @@ export const Form = ({ onFormSubmit }) => {
         <form action="" onSubmit={onFormSubmit}>
             <div>
             <label htmlFor="day">Day</label>
-            <br />
             <input type="number" name="day" id="day" max="31" onInput={ onCheckInputs }/>
             <br />
             { errors.day }

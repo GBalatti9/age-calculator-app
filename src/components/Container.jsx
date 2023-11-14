@@ -8,9 +8,12 @@ export const Container = () => {
     const { onFormSubmit, birthDate } = handleInputs();
 
     return (
-        <>
-            <Form onFormSubmit={onFormSubmit} />
-            <Result birthDate={birthDate} />
-        </>
+        <div className="bg-secondary-subtle bg-size">
+            <div className="container bg-white border custom-border-radius">
+                <Form onFormSubmit={onFormSubmit} />
+                <hr />
+                <Result birthDate={birthDate} />
+            </div>
+        </div>
     )
 }

@@ -1,0 +1,8 @@
+.bg-size{
+    width: 100vw;
+    height: 100vh;
+}
+
+.custom-border-radius{
+    border-radius: 20px 20px 80px 20px;
+}
