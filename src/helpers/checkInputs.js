@@ -3,6 +3,12 @@ import { useState } from "react";
 
 export const checkInputs = () => {
 
+    let btn = document.getElementById('btn');
+    // btn.disabled = true;
+    // btn.style.backgroundColor = 'grey';
+    // btn.style.color = 'black';
+    // btn.style.opacity = '100%';
+
     const [errors, setErrors] = useState({
         day: '',
         month: '',
@@ -21,18 +27,31 @@ export const checkInputs = () => {
     const onCheckInputs = ({ target }) => {
 
         const { name } = target;
+        console.log(name);
         
         if (name === 'day') {
             const inputDay = document.getElementById('day');
-            inputDay.value > 0 ? updateErrors(errors, name, '') : updateErrors(errors, name, 'Cannot be empty');
+            let value = Number(inputDay.value)
+            inputDay.classList.remove('border-success', 'border-danger');
+            value > 0 ?
+            inputDay.classList.add('border', 'border-success'):
+            inputDay.classList.add('border', 'border-danger');
         }
         if (name === 'month') {
             const inputMonth = document.getElementById('month');
-            inputMonth.value > 0 ? updateErrors(errors, name, '') : updateErrors(errors, name, 'Cannot be empty');
+            let value = Number(inputMonth.value);
+            inputMonth.classList.remove('border-success', 'border-danger');
+            value > 0 ?
+            inputMonth.classList.add('border', 'border-success'):
+            inputMonth.classList.add('border', 'border-danger');
         }
         if (name === 'year') {
             const inputYear = document.getElementById('year');
-            inputYear.value > 0 ? updateErrors(errors, name, '') : updateErrors(errors, name, 'Cannot be empty');
+            let value = Number(inputYear.value);
+            inputYear.classList.remove('border-success', 'border-danger');
+            value > 0 ?
+            inputYear.classList.add('border', 'border-success'):
+            inputYear.classList.add('border', 'border-danger');
         }
     }
 

@@ -2,9 +2,9 @@ import { useState } from "react";
 import months from '../database/months.json';
 
 let birthdate = {
-    day: "--",
-    month: "--",
-    year: "--",
+    day: "0 days",
+    month: "0 months",
+    year: "0 years",
 }
 
 const today = {
