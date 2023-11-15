@@ -59,9 +59,9 @@ export const handleInputs = () => {
 
 
         const outputAge = {
-            day: ageDay,
-            month: ageMonth,
-            year: ageYear,
+            day: `${ageDay} days`,
+            month: `${ageMonth} months`,
+            year: `${ageYear} years`,
         }
 
         setBirthDate(outputAge);
