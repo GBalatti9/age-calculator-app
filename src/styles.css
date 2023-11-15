@@ -13,31 +13,32 @@
     color: hsl(259, 100%, 65%);
 }
 
-.bg-purple{
+.bg-purple {
     background-color: hsl(259, 100%, 65%);
     color: white;
 }
 
-.font{
+.font {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-style: italic;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
-.input-font{
-    font-size: 32px;
+.input-font {
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
-.input-width{
+.input-width {
     width: 80%;
 }
 
-.size{
-    height: 70vh;
-    width: 50%;
+.size {
+    /* border: 1px solid black; */
+    height: 65vh;
+    width: 350px;
 }
 
 .custom-form {
@@ -45,32 +46,59 @@
     /* border: 1px solid blue; */
 }
 
-.custom-btn{
+.custom-btn {
     position: absolute;
-    right: 30px;
+    right: 110px;
     bottom: -35px;
     opacity: 100%;
     font-size: 20px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white;
     color: hsl(259, 100%, 65%);
 }
 
-.light-grey{
+.light-grey {
     font-family: 'Poppins', sans-serif;
     color: hsl(0, 0%, 8%);
     font-weight: 700;
 }
 
-.custom-label{
+.custom-label {
     padding-bottom: 5px;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 2px;
 }
 
-.custom-border{
+.custom-border {
     width: 90%;
     margin: 15px auto;
+}
+
+@media (min-width: 460px) {
+    .size {
+        height: 70vh;
+        width: 450px;
+    }
+
+    .custom-btn {
+        right: 30px;
+
+    }
+
+    .input-font {
+        font-size: 20px;
+    }
+
+    .custom-label {
+        font-size: 12px;
+    }
+
+    .font {
+        font-size: 3.2rem;
+    }
+    .custom-border {
+        width: 80%;
+    }
 }

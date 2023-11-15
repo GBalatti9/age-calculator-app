@@ -9,7 +9,7 @@ export const Container = () => {
 
     return (
         <div className="bg-secondary-subtle bg-size d-flex align-items-center justify-content-center">
-            <div className="container bg-white border custom-border-radius size">
+            <div className="container bg-white border custom-border-radius size shadow">
                 <Form onFormSubmit={onFormSubmit} />
                 <hr className="border border-dark border-1 opacity-50 custom-border" />
                 <Result birthDate={birthDate} />
