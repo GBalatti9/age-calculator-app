@@ -70,5 +70,6 @@ export const handleInputs = () => {
     return {
         onFormSubmit,
         birthDate,
+        inputProps: Object.keys(birthdate),
     }
 }
