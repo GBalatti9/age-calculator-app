@@ -76,6 +76,13 @@
     margin: 15px auto;
 }
 
+.btn-disabled{
+    opacity: 100%;
+    background-color: gray;
+    color: black;
+    border: none;
+}
+
 @media (min-width: 460px) {
     .size {
         height: 70vh;

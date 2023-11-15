@@ -3,7 +3,7 @@ import { checkInputs } from "../helpers/checkInputs"
 
 export const Form = ({ onFormSubmit, inputProps }) => {
 
-    const { errors, onCheckInputs } = checkInputs();
+    const { onCheckInputs } = checkInputs();
 
     return (
         <>
